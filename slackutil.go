@@ -9,7 +9,7 @@ type Slack struct {
 	WebhookURL string
 }
 
-func Init(url string) *Slack {
+func NewWebhook(url string) *Slack {
 	if url == "" {
 		return nil
 	}
