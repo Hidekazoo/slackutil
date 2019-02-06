@@ -9,10 +9,6 @@ type Slack struct {
 	WebhookURL string
 }
 
-type sendParams struct {
-	Text string `json:"text"`
-}
-
 func Init(url string) *Slack {
 	if url == "" {
 		return nil
